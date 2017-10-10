@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Database
+comment0.text=\n\ A\ very\ simple\ database\ of\ people\ in\ a\ university.\ This\ class\ simply\ stores\n\ persons\ and,\ at\ request,\ lists\ them\ on\ standard\ output.\n\n\ Written\ as\ a\ first\ demo\ program\ for\ BlueJ.\n\n\ @author\ \ Michael\ K\u00F6lling\n\ @version\ 1.1,\ March\ 2002\n
+comment1.params=
+comment1.target=Database()
+comment1.text=\n\ Create\ a\ new,\ empty\ person\ database.\n
+comment2.params=
+comment2.target=void\ listAll()
+comment2.text=\n\ List\ all\ the\ persons\ currently\ in\ the\ database\ on\ standard\ out.\n
+numComments=3

@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Staff
+comment0.text=\n\ A\ class\ representing\ staff\ members\ for\ a\ simple\ BlueJ\ demo\ program.\n\n\ @author\ \ Michael\ K\u00F6lling\n\ @version\ 1.0,\ January\ 1999\n
+comment1.params=
+comment1.target=Staff()
+comment1.text=\n\ Create\ a\ staff\ member\ with\ default\ settings\ for\ detail\ information.\n
+comment2.params=name\ yearOfBirth\ roomNumber
+comment2.target=Staff(java.lang.String,\ int,\ java.lang.String)
+comment2.text=\n\ Create\ a\ staff\ member\ with\ given\ name,\ year\ of\ birth\ and\ room\n\ number.\n
+comment3.params=newRoom
+comment3.target=void\ setRoom(java.lang.String)
+comment3.text=\n\ Set\ a\ new\ room\ number\ for\ this\ person.\n
+comment4.params=
+comment4.target=java.lang.String\ getRoom()
+comment4.text=\n\ Return\ the\ room\ number\ of\ this\ person.\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\n\ Return\ a\ string\ representation\ of\ this\ object.\n
+numComments=6
