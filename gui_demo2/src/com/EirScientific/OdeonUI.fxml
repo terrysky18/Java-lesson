@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainWindow" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.EirScientific.OdeonUIController">
+    <top>
+        <GridPane alignment="CENTER">
+            <Label text="ODEON" textFill="navy" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0">
+                <font><Font name="Impact" size="40" /></font>
+            </Label>
+            <Label text="Ticket Booking System" textFill="black" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                <font><Font name="Times New Roman bold" size="24" /></font>
+            </Label>
+         <columnConstraints>
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+    </top>
+
+    <left>
+        <GridPane hgap="5" vgap="10">
+            <padding>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </padding>
+            <Button fx:id="projectionToday" onAction="#handleClick" text="Projections for Today" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                <font><Font name="Times New Roman bold" size="18" /></font>
+            </Button>
+            <Button fx:id="projectionFuture" onAction="#handleClick" text="Upcoming Projections" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                <font><Font name="Times New Roman bold" size="18" /></font>
+            </Button>
+            <Button fx:id="sellTicket" onAction="#handleClick" text="Sell Tickets" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                <font><Font name="Times New Roman bold" size="18" /></font>
+            </Button>
+            <Button fx:id="makeCustomer" onAction="#handleClick" text="Create Customer" GridPane.columnIndex="0" GridPane.rowIndex="5">
+                <font><Font name="Times New Roman bold" size="18" /></font>
+            </Button>
+            <Button fx:id="addProjection" onAction="#handleClick" text="Add Projection" GridPane.columnIndex="0" GridPane.rowIndex="6">
+                <font><Font name="Times New Roman bold" size="18" /></font>
+            </Button>
+            <Button fx:id="spectatorReport" onAction="#handleClick" text="Spectator Review Report" GridPane.columnIndex="0" GridPane.rowIndex="7">
+                <font><Font name="Times New Roman bold" size="18" /></font>
+            </Button>
+            <Button fx:id="incomeReport" onAction="#handleClick" text="Film Income Report" GridPane.columnIndex="0" GridPane.rowIndex="8">
+                <font><Font name="Times New Roman bold" size="18" /></font>
+            </Button>
+         <columnConstraints>
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+
+        </GridPane>
+    </left>
+
+    <right>
+        <VBox alignment="TOP_LEFT" spacing="1">
+            <padding>
+                <Insets bottom="3" left="3" right="3" top="3" />
+            </padding>
+            <Label fx:id="weekDay" text="Day of week">
+                <font><Font name="Times New Roman" size="15" /></font>
+            </Label>
+            <Label fx:id="currentDate" text="Current Date">
+                <font><Font name="Times New Roman" size="15" /></font>
+            </Label>
+            <Label fx:id="currentTime" text="Current Time">
+                <font><Font name="Times New Roman" size="15" /></font>
+            </Label>
+        </VBox>
+    </right>
+
+    <bottom>
+        <HBox alignment="BASELINE_RIGHT" spacing="18">
+            <padding>
+                <Insets bottom="5" left="3" right="5" top="3" />
+            </padding>
+
+            <Button fx:id="exitButton" onAction="#handleClick" text="Exit">
+                <font><Font name="Times New Roman bold" size="18" /></font>
+            </Button>
+
+        </HBox>
+    </bottom>
+   <center>
+      <ListView fx:id="centreList" prefHeight="200.0" prefWidth="400.0" BorderPane.alignment="CENTER"
+                style="-fx-font-family: cambria; -fx-font-size: 18px">
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </ListView>
+   </center>
+
+</BorderPane>

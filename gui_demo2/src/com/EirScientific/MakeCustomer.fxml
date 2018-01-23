@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<BorderPane prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.EirScientific.MakeCustomerController">
+
+    <top>
+        <GridPane alignment="CENTER">
+            <Label alignment="CENTER" text="Create Customer" textFill="black" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0">
+                <font><Font name="Times New Roman bold" size="24" /></font>
+            </Label>
+         <columnConstraints>
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+        </GridPane>
+    </top>
+    <center>
+        <GridPane alignment="CENTER" hgap="5.0" vgap="3.0">
+            <Label alignment="TOP_LEFT" text="First Name" textFill="black" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="0">
+                <font><Font name="Times New Roman bold" size="20" /></font>
+            </Label>
+            <Label alignment="TOP_LEFT" text="Surname" textFill="black" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="0">
+                <font><Font name="Times New Roman bold" size="20" /></font>
+            </Label>
+            <TextField fx:id="christianName" alignment="CENTER" text="" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+            </TextField>
+            <TextField fx:id="surname" alignment="CENTER" text="" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+            </TextField>
+            <!--<Label fx:id="confirmText" alignment="CENTER" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.columnSpan="2">-->
+                <!--<font><Font name="Times New Roman bold" size="17"/></font>-->
+            <!--</Label>-->
+
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+         <padding>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+         </padding>
+        </GridPane>
+    </center>
+    <bottom>
+        <!--<HBox alignment="BASELINE_RIGHT" spacing="18">-->
+            <!--<padding>-->
+                <!--<Insets bottom="5" left="3" right="5" top="3" />-->
+            <!--</padding>-->
+            <!--<Button fx:id="saveButton" onAction="#handleClick" text="Save" >-->
+                <!--<font><Font name="Times New Roman bold" size="18" /></font>-->
+            <!--</Button>-->
+            <!--<Button fx:id="closeButton" onAction="#handleClick" text="Close" >-->
+                <!--<font><Font name="Times New Roman bold" size="18" /></font>-->
+            <!--</Button>-->
+
+        <!--</HBox>-->
+    </bottom>
+</BorderPane>
